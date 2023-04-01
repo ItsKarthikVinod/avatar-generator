@@ -13,20 +13,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +24,61 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  text-align: center;
+  background:radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  min-height: 100vh;
+  margin-top: 0px;
+  text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+      3px 4px 4px rgba(179, 147, 211, 0.15),
+      4px 6px 4px rgba(179, 147, 211, 0.2),
+      5px 8px 4px rgba(179, 147, 211, 0.25);
+}
+
+.app__header{
+  padding: 20px;
+  font-family: sans-serif;
+  color: rgb(4, 28, 23);
+  display: flex;
+  flex: 1;
+  background-color: rgba(198, 250, 250, 0.68);
+  align-items: center;
+  justify-content: center;
+}
+
+.upload__div{
+  margin-top: 1em;
+}
+
+.upload__div > input {
+  font-size: large;
+  margin: 4em;
+}
+
+.image__div{
+  display: flex;
+  gap: 10vw;
+  flex: 1;
+  justify-content: center;
+
+}
+
+.image__div > img{
+  width: 30vw;
+  height: 30vw;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.image__div :nth-child(2){
+  border-radius: 100%;
+  width: 30vw;
+  border: 10px solid rgb(58, 130, 232);
+}
+
+
